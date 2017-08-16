@@ -1,4 +1,10 @@
 <?php
+
+  /**
+   * Call; get the controller required
+   * @param  [string] $controller [the nam eof the controller to load]
+   * @param  [string] $action     [the name of the method inside that controller to trigger]
+   */
   function call($controller, $action) {
     require_once('controllers/' . $controller . '_controller.php');
 
