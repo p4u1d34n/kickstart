@@ -27,7 +27,7 @@
       
       foreach($req->fetchAll() as $post) {
         $active = false;
-        if($_SERVER["REQUEST_URI"] === $post['link']) {
+        if($_SERVER["REQUEST_URI"] === $post['link'] || $_SERVER["QUERY_STRING"] === $post['link'] ) {
             $active = true;
         }
         $list[] = new Menu($post['id'], $post['link'], $post['title'], $active);
