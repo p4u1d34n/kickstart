@@ -3,7 +3,9 @@
 
     private static $instance = NULL;
 
-    private function __construct() {}
+    private function __construct() {
+      $this->getInstance();
+    }
 
     private function __clone() {}
 
