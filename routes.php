@@ -17,14 +17,16 @@
         require_once( 'models/Post.php');
         $controller = new PostsController();
       break;
+
     }
 
     $controller->{ $action }();
   }
 
   // adding entry for - new controller + actions
-  $controllers = array('pages' => ['home', 'error'],
-                       'posts' => ['index', 'show']);
+  $controllers = array(
+    'pages' => ['home', 'error'],
+    'posts' => ['index', 'show']);
 
   if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {

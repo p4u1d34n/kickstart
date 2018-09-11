@@ -1,3 +1,6 @@
+<?php
+    print_r($menu);
+?>
 <nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="/">Home</a></li>

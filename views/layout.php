@@ -32,7 +32,7 @@
 				<!-- Main -->
 					<div id="main">
 
-            <?php require_once('routes.php'); ?>
+            		<?php require_once('routes.php'); ?>
 
 
 					</div>
