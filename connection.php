@@ -33,12 +33,11 @@
           
           print "something went wrong\n<pre>";
           print_r($e) . '</pre>';
+
+          print_r(json_encode(self::$dbCredentials));
         }
       }
-        if (!self::$instance) {
-          echo "DB NOT CONNECTED";
-          
-      }
+
       return self::$instance;
     }
   }
