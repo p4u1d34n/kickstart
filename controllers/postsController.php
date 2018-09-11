@@ -5,8 +5,6 @@
       // we store all the posts in a variable
       $posts = Post::all();
       require_once('views/posts/index.php');
-      
-      print_r($_SERVER);
     }
 
     public function show() {
