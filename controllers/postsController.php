@@ -1,5 +1,6 @@
 <?php
   class PostsController {
+  
     public function index() {
       // we store all the posts in a variable
       $posts = Post::all();
@@ -14,5 +15,6 @@
       $post = Post::find($_GET['id']);
       require_once('views/posts/show.php');
     }
+    
   }
 ?>
