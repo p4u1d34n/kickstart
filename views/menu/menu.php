@@ -2,7 +2,7 @@
 	<ul class="links">
 <?php
     foreach ($menu as $item) {
-        echo '<li class="'.$item->staus.'"><a href="'.$item->link.'">'.$item->title.'</a></li>';
+        echo '<li class="'.($item->active?'active':'').'"><a href="'.$item->link.'">'.$item->title.'</a></li>';
     }
 ?>
 	</ul>

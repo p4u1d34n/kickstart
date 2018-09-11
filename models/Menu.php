@@ -15,6 +15,7 @@
       $this->id     = $id;
       $this->link   = $link;
       $this->title  = $title;
+      $this->active = $active;
     }
 
     public static function all() {
@@ -23,8 +24,13 @@
       $req = $db->query('SELECT * FROM menu');
 
       // Create Post objects from the DB Result
+      
       foreach($req->fetchAll() as $post) {
-        $list[] = new Menu($post['id'], $post['link'], $post['title']);
+        $active = false;
+        if($_SERVER["REQUEST_URI"] === $post['link']) {
+            $active = true;
+        }
+        $list[] = new Menu($post['id'], $post['link'], $post['title'], $active);
       }
 
       return $list;
