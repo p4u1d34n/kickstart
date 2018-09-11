@@ -12,16 +12,22 @@
     private function __clone() {}
 
     private static function getEnv() {
-      $env = fopen("env.ini");
-      if($env) {
-        while(($line=fgets($env)) !== false) {
-          $credentials = explode(",",$line);
-          print_r($credentials);
-          self::$dbCredentials = $credentials; 
+      try {
+        $env = fopen("env.ini");
+        if($env) {
+          while(($line=fgets($env)) !== false) {
+            $credentials = explode(",",$line);
+            print_r($credentials);
+            self::$dbCredentials = $credentials; 
+          }
         }
-      } else {
-        die("create .env file");
+      } catch(Exception $e) {
+        print "didnt load env.ini\n<pre>";
+        print_r($e) . '</pre>';
+
+        print_r(json_encode(self::$dbCredentials));
       }
+      
     }
 
     public static function getInstance() {
