@@ -10,8 +10,6 @@
 
     <?php 
     
-    print_r($_SERVER);
-    
     require_once('routes.php'); ?>
 
     <footer>
