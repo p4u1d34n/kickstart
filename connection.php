@@ -12,7 +12,7 @@
     private function __clone() {}
 
     private static function getEnv() {
-      $env = fopen(".env");
+      $env = fopen("env.ini");
       if($env) {
         while(($line=fgets($env)) !== false) {
           $credentials = explode(",",$line);
