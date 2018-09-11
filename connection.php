@@ -13,8 +13,8 @@
         self::$instance = new PDO('mysql:host=localhost;dbname=mvc', 'rootuser', 'p455w0rd', $pdo_options);
       }
         if (!$self::$instance) {
-          echo "\nPDO::errorInfo():\n";
-          print_r(self::$instance->errorInfo());
+          echo "DB NOT CONNECTED";
+          
       }
       return self::$instance;
     }
