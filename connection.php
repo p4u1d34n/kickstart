@@ -9,7 +9,6 @@
     private static $instance = NULL;
 
     private function __construct() {
-      $this->getEnv();
       $this->getInstance();
     }
 
