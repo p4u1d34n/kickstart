@@ -1,7 +1,7 @@
 <?php
   class Db {
 
-    protected $dbCredentials;
+    protected static $dbCredentials;
     private static $instance = NULL;
 
     private function __construct() {
