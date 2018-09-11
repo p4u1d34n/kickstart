@@ -14,7 +14,7 @@
       break;
       case 'posts':
         // we need the model to query the database later in the controller
-        require_once( '/models/Post.php');
+        require_once( 'models/Post.php');
         $controller = new PostsController();
       break;
     }
