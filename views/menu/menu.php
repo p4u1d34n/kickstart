@@ -5,7 +5,6 @@
         echo '<li class=""><a href="'.$item->link.'">'.$item->title.'</a></li>';
     }
 ?>
-    <li><a href="?controller=posts&action=index">Posts</a></li>
 	</ul>
 	<ul class="icons">
         <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
