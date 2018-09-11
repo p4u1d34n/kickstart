@@ -13,7 +13,7 @@
     require_once('routes.php'); ?>
 
     <footer>
-      Copyright
+      :)
     </footer>
   <body>
 <html>

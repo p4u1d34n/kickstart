@@ -1,10 +1,10 @@
 <?php
   class Db {
 
-    protected static $dbHost;
-    protected static $dbScheme;
-    protected static $dbUser;
-    protected static $dbPass;
+    protected static $dbHost = 'localhost';
+    protected static $dbScheme = 'mvc';
+    protected static $dbUser = NULL;
+    protected static $dbPass = NULL;
     
     private static $instance = NULL;
 
