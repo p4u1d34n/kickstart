@@ -27,7 +27,13 @@
     public static function getInstance() {
       if (!isset(self::$instance)) {
         $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-        self::$instance = new PDO('mysql:host='.self::$dbCredentials[0].';dbname='.self::$dbCredentials[1],self::$dbCredentials[2],self::$dbCredentials[3], $pdo_options);
+        try { 
+          self::$instance = new PDO('mysql:host='.self::$dbCredentials[0].';dbname='.self::$dbCredentials[1],self::$dbCredentials[2],self::$dbCredentials[3], $pdo_options);
+        } catch (Exception $e) {
+          
+          print "something went wrong\n<pre>";
+          print_r($e) . '</pre>';
+        }
       }
         if (!$self::$instance) {
           echo "DB NOT CONNECTED";
