@@ -12,6 +12,10 @@
         $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
         self::$instance = new PDO('mysql:host=localhost;dbname=mvc', 'rootuser', 'p455w0rd', $pdo_options);
       }
+        if (!$self::$instance) {
+          echo "\nPDO::errorInfo():\n";
+          print_r(self::$instance->errorInfo());
+      }
       return self::$instance;
     }
   }
