@@ -24,7 +24,7 @@
 
       // Create Post objects from the DB Result
       foreach($req->fetchAll() as $post) {
-        $list[] = new Post($post['id'], $post['link'], $post['title']);
+        $list[] = new Menu($post['id'], $post['link'], $post['title']);
       }
 
       return $list;
