@@ -4,7 +4,7 @@
   </head>
   <body>
     <header>
-      <a href='/kickstart/'>Home</a>
+      <a href='/'>Home</a>
       <a href='?controller=posts&action=index'>Posts</a>
     </header>
 
