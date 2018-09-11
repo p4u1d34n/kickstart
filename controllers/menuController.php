@@ -7,7 +7,6 @@
       $menu = Menu::all();
       require_once('views/menu/menu.php');
     }
-
     
   }
 ?>
