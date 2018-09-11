@@ -35,7 +35,7 @@
           print_r($e) . '</pre>';
         }
       }
-        if (!$self::$instance) {
+        if (!self::$instance) {
           echo "DB NOT CONNECTED";
           
       }
