@@ -1,5 +1,6 @@
 <?php
   class Db {
+
     private static $instance = NULL;
 
     private function __construct() {}
