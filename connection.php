@@ -1,8 +1,7 @@
 <?php
   class Db {
 
-    private $dbCredentials;
-
+    protected $dbCredentials;
     private static $instance = NULL;
 
     private function __construct() {
@@ -28,7 +27,7 @@
     public static function getInstance() {
       if (!isset(self::$instance)) {
         $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-        self::$instance = new PDO('mysql:host='.$dbCredentials[0].';dbname='.$dbCredentials[1],$dbCredentials[2],$dbCredentials[3], $pdo_options);
+        self::$instance = new PDO('mysql:host='.self::$dbCredentials[0].';dbname='.self::$dbCredentials[1],self::$dbCredentials[2],self::$dbCredentials[3], $pdo_options);
       }
         if (!$self::$instance) {
           echo "DB NOT CONNECTED";
