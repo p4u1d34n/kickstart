@@ -27,10 +27,8 @@
           if( count($credentials) == 0 ) {
             throw new Exception('Nothing in credentials');
           } else {
-            self::$dbHost = $credentials[0];
-            self::$dbScheme = $credentials[1];
-            self::$dbUser = $credentials[2];
-            self::$dbPass = $credentials[3];
+            self::$dbUser = $credentials[0];
+            self::$dbPass = $credentials[1];
           }
 
         } else {
