@@ -6,7 +6,7 @@
    * @param  [string] $action     [the name of the method inside that controller to trigger]
    */
   function call($controller, $action) {
-    require_once('controllers/' . $controller . '_controller.php');
+    require_once('controllers/' . $controller . 'Controller.php');
 
     switch($controller) {
       case 'pages':
