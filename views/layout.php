@@ -74,16 +74,16 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								<p>Javea<br />
+								Spain</p>
 							</section>
 							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<h3>Insta</h3>
+								<p><a href="#">@pauldeano</a></p>
 							</section>
 							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<h3>Twitter</h3>
+								<p><a href="#">@pauldeano</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -99,7 +99,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Deano</li></ul>
 					</div>
 
 			</div>
