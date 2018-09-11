@@ -15,7 +15,7 @@
       $env = fopen(".env");
       if($env) {
         while(($line=fgets($env)) !== false) {
-          $credentials = explode($line,",");
+          $credentials = explode(",",$line);
           print_r($credentials);
           self::$dbCredentials = $credentials; 
         }
