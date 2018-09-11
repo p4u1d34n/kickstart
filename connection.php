@@ -1,7 +1,7 @@
 <?php
   class Db {
 
-    private $dbCredentials = NULL;
+    private $dbCredentials;
 
     private static $instance = NULL;
 
@@ -16,7 +16,9 @@
       $env = fopen(".env");
       if($env) {
         while(($line=fgets($env)) !== false) {
-          self::$dbCredentials = explode($line,",");
+          $credentials = explode($line,",");
+          print_r($credentials);
+          self::$dbCredentials = $credentials; 
         }
       } else {
         die("create .env file");
