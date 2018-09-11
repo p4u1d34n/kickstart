@@ -22,7 +22,8 @@
         if($env) {
           $credentials = array();
           while(($line=fgets($env)) !== false) {
-            $credentials[] = $line;
+            $credentials = explode(",",$line);
+            print_r($credentials);
           }
           if( count($credentials) == 0 ) {
             throw new Exception('Nothing in credentials');
