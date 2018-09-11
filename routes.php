@@ -14,7 +14,7 @@
       break;
       case 'posts':
         // we need the model to query the database later in the controller
-        require_once('/kickstart/models/post.php');
+        require_once( $_SERVER["DOCUMENT_ROOT"].'/kickstart/models/post.php');
         $controller = new PostsController();
       break;
     }
