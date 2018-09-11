@@ -23,13 +23,12 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Paul Dean</a>
+						<a href="/" class="logo">Paul Dean</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-              
 							<li class="active"><a href="/">Home</a></li>
 							<li><a href="?controller=posts&action=index">Posts</a></li>
 						</ul>
@@ -45,9 +44,6 @@
 					<div id="main">
 
             <?php require_once('routes.php'); ?>
-
-						
-							
 
 						<!-- Footer -->
 							<footer>
@@ -129,7 +125,7 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+      <script src="assets/js/main.js"></script>
+      
 	</body>
 </html>
