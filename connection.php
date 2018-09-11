@@ -17,9 +17,10 @@
         if($env) {
           while(($line=fgets($env)) !== false) {
             $credentials = explode(",",$line);
-            print_r($credentials);
             self::$dbCredentials = $credentials; 
           }
+        } else {
+          throw new Exception('Did not open env.ini');
         }
       } catch(Exception $e) {
         print "didnt load env.ini\n<pre>";
