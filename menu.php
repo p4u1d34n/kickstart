@@ -7,4 +7,6 @@
     require_once('controllers/menuController.php');
     $controller = new MenuController();
   }
+
+  show();
 ?>
