@@ -18,7 +18,7 @@
     private static function getEnv() {
       
       try {
-        $env = fopen("env.ini");
+        $env = fopen(".db");
         if($env) {
           $credentials = array();
           while(($line=fgets($env)) !== false) {
