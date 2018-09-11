@@ -17,7 +17,6 @@
       $this->content = $content;
     }
 
-
     public static function all() {
       $list = [];
       $db = Db::getInstance();
