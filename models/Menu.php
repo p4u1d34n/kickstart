@@ -11,7 +11,7 @@
      * @param [string] $author  [description]
      * @param [string] $content [description]
      */
-    public function __construct($id, $link, $title) {
+    public function __construct($id, $link, $title, $active) {
       $this->id     = $id;
       $this->link   = $link;
       $this->title  = $title;
