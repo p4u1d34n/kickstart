@@ -24,7 +24,7 @@
     private function __clone() {}
 
     public static function getInstance() {
-      $this->getCredentials();
+      self::getCredentials();
       if (!isset(self::$instance)) {
         $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
         try { 
