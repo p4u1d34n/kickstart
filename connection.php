@@ -9,7 +9,7 @@
     private static $instance = NULL;
 
     private function __construct() {
-
+      $this->getCredentials();
       $this->getInstance();
     }
 
