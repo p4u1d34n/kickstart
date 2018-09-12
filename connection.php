@@ -14,7 +14,6 @@
 
     private static function getCredentials() {
       $config = json_decode(json_encode(parse_ini_file("config.ini",true)));
-      print_r($config);
       self::$dbHost = $config->database->host;
       self::$dbScheme = $config->database->schema;
       self::$dbUser = $config->database->user;
