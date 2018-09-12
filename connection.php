@@ -14,11 +14,11 @@
     }
 
     private function getCredentials() {
-      $config = json_decode(json_encode(parse_ini_file("config.ini")));
-      self::$dbHost = $config->host;
-      self::$dbScheme = $config->schema;
-      self::$dbUser = $config->user;
-      self::$dbPass = $config->pass;
+      $config = json_decode(json_encode(parse_ini_file("config.ini",true)));
+      self::$dbHost = $config->database->host;
+      self::$dbScheme = $config->database->schema;
+      self::$dbUser = $config->database->user;
+      self::$dbPass = $config->database->password;
     }
 
     private function __clone() {}
