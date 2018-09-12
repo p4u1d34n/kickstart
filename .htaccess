@@ -3,8 +3,8 @@ Order Allow,Deny
 Deny from all
 </FilesMatch>
 
-Options +FollowSymLinks
-RewriteEngine On
-RewriteRule ^(\w+)/?$ index.php?controller=$1&action=index [QSA]
-RewriteRule ^(\w+)/(\w+)/?$ index.php?controller=$1&action=$2 [QSA]
-RewriteRule ^(\w+)/(\w+)/(\w+)/?$ index.php?controller=$1&action=$2&id=$3 [QSA]
+#Options +FollowSymLinks
+#RewriteEngine On
+#RewriteRule ^(\w+)/?$ index.php?controller=$1&action=index [QSA]
+#RewriteRule ^(\w+)/(\w+)/?$ index.php?controller=$1&action=$2 [QSA]
+#RewriteRule ^(\w+)/(\w+)/(\w+)/?$ index.php?controller=$1&action=$2&id=$3 [QSA]
