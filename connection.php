@@ -1,15 +1,24 @@
 <?php
   class Db {
 
-    protected static $dbHost = 'localhost';
-    protected static $dbScheme = 'mvc';
-    protected static $dbUser = 'rootuser';
-    protected static $dbPass = 'p455w0rd';
+    protected static $dbHost = '';
+    protected static $dbScheme = '';
+    protected static $dbUser = '';
+    protected static $dbPass = '';
     
     private static $instance = NULL;
 
     private function __construct() {
+
       $this->getInstance();
+    }
+
+    private function getCredentials() {
+      $config = json_decode(json_encode(parse_ini_file("config.ini")));
+      self::$dbHost = $config->host;
+      self::$dbScheme = $config->schema;
+      self::$dbUser = $config->user;
+      self::$dbPass = $config->pass;
     }
 
     private function __clone() {}
